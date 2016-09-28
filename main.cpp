@@ -17,6 +17,8 @@ struct Node {
  */
 void initNode(struct Node *head, int n) {
   //TODO: Initiliaze the node data to n and the next pointer to..?
+  head->data = n;
+  head->next = NULL;
 }
 
 /**
@@ -26,6 +28,7 @@ void initNode(struct Node *head, int n) {
  */
 void addNode(struct Node *head, int n) {
   //TODO - Implement this function.
+
 }
 
 /**
