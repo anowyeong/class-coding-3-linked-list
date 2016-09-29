@@ -108,7 +108,16 @@ struct Node *searchNode(struct Node *head, int n) {
  */
 bool deleteNode(struct Node **head, Node *ptrDel) {
   //TODO
-  return false;
+    Node *list;
+  list = *head;
+  if(list != NULL){
+    while(list ->next == ptrDel){
+      list->next = list->next->next;
+    }
+    return true;
+     }else
+      return false;
+}
 }
 
 /* reverse the list */
