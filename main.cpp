@@ -57,13 +57,20 @@ void insertFront(struct Node **head, int n) {
  */
 void display(struct Node *head) {
   //TODO
-  while(head != nullptr){
-    
-        cout << head->data << " ";
+  Node *list = new Node;
 
-        head = head->next;
+    list = head;
+
+    while(list != nullptr){
+
+        cout << list->data << " ";
+
+        list = list->next;
     }
+
+    cout << endl;
 }
+
 
 /**
  * This function searches for a node holding n and returns a pointer to it.
