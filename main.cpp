@@ -28,7 +28,18 @@ void initNode(struct Node *head, int n) {
  */
 void addNode(struct Node *head, int n) {
   //TODO - Implement this function.
+  Node *root = new Node;
+  root -> data = n;
+  root -> next = NULL;
 
+  if(!head) { 
+      head = root;
+      return;
+  } else { 
+      Node *tail = head;
+      while(tail -> next) tail = tail -> next;
+      tail -> next = root;
+  }
 }
 
 /**
