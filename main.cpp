@@ -113,6 +113,8 @@ bool deleteNode(struct Node **head, Node *ptrDel) {
   if(list != NULL){
     while(list ->next == ptrDel){
       list->next = list->next->next;
+      ptrDel->next = NULL;
+      ptrDel->data = NULL;
     }
     return true;
      }else
