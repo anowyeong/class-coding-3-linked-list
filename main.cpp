@@ -62,6 +62,13 @@ void display(struct Node *head) {
  */
 struct Node *searchNode(struct Node *head, int n) {
   //TODO
+    Node* searchNode= head;
+    while(searchNode != NULL){
+        if (searchNode->data== n){
+            return searchNode;
+        }
+        searchNode=searchNode->next;
+    }
   return NULL;
 }
 
