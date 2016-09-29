@@ -49,6 +49,16 @@ void addNode(struct Node *head, int n) {
  */
 void insertFront(struct Node **head, int n) {
   //TODO
+    Node *temp = (Node*)malloc(sizeof(struct Node));
+    temp ->data=n;
+    temp->next=NULL;
+    if(head!=NULL){
+        temp->next= (Node *) head;
+        head= (Node **) temp;
+    }
+
+  
+  
 }
 
 /**
